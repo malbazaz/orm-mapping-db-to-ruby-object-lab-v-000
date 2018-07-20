@@ -79,7 +79,7 @@ class Student
       FROM students
       WHERE grade <=11;
     SQL
-new_row = DB[:conn].execute(sql).flatten
+new_row = DB[:conn].execute(sql)
 self.new_from_db(new_row)
     #binding.pry
   end
