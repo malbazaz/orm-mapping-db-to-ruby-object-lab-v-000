@@ -104,11 +104,12 @@ class Student
   end
 
   def sef.all_students_in_grade_X(x)
-    sql = <<-SQL 
-      SELECT * 
+    sql = <<-SQL
+      SELECT *
       FROM students
       WHERE grade = ?;
-    SQL 
+    SQL
     DB[:conn].execute(sql,x)
+  end 
 
 end
