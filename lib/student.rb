@@ -103,4 +103,12 @@ class Student
     DB[:conn].execute(sql).flatten
   end
 
+  def sef.all_students_in_grade_X(x)
+    sql = <<-SQL 
+      SELECT * 
+      FROM students
+      WHERE grade = ?;
+    SQL 
+    DB[:conn].execute(sql,x)
+
 end
