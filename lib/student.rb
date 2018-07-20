@@ -80,5 +80,5 @@ class Student
       WHERE grade <= 11;
     SQL
     DB[:conn].execute(sql)
-  end 
+  end
 end
