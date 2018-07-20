@@ -80,6 +80,7 @@ class Student
       WHERE grade <12;
     SQL
   mo=  DB[:conn].execute(sql)
+    binding.pry
   end
-  binding.pry
+
 end
