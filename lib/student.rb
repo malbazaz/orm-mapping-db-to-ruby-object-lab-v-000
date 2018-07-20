@@ -91,5 +91,6 @@ class Student
       LIMIT 10;
     SQL
     DB[:conn].execute(sql)
+  end
 
 end
