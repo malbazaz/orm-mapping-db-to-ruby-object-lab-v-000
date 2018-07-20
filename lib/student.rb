@@ -18,7 +18,7 @@ class Student
       SELECT *
       FROM students
     SQL
-    DB[:conn].executre(sql).map do |row|
+    DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
     end
   end
@@ -82,5 +82,7 @@ class Student
  DB[:conn].execute(sql)
     #binding.pry
   end
+
+
 
 end
