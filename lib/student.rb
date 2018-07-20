@@ -79,7 +79,7 @@ class Student
       FROM students
       WHERE grade <=11;
     SQL
- DB[:conn].execute(sql)
+ name_something= DB[:conn].execute(sql)
     binding.pry
   end
 
