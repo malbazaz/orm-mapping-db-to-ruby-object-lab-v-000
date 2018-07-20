@@ -79,7 +79,7 @@ class Student
       FROM students
       WHERE grade <=11;
     SQL
- DB[:conn].execute(sql).flatten 
+ DB[:conn].execute(sql)
     #binding.pry
   end
 
@@ -100,7 +100,7 @@ class Student
       WHERE grade=10
       LIMIT 1;
     SQL
-    DB[:conn].execute(sql).flatten 
+    DB[:conn].execute(sql).flatten
   end
 
 end
