@@ -79,7 +79,7 @@ class Student
       FROM students
       WHERE grade <12;
     SQL
-  DB[:conn].execute(sql)
+  DB[:conn].execute(sql).first
     #binding.pry
   end
 
